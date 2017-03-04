@@ -4,8 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'my-app',
-  templateUrl: 'src/app.html',
-  styleUrl: [''],
+  template: `
+  <div>
+    <div [style.background-color]="getStyle()">
+      I'm a div that wants to be styled
+    </div>
+    <button (click)="showStyle = !showStyle;">Toggle style</button>
+  </div>
+  `
 })
 class App {
   showStyle: false;
