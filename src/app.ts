@@ -28,5 +28,3 @@ class App {
   bootstrap: [ App ]
 })
 export class AppModule {}
-
-ng2-co  
